@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" href="p2.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Saya</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="p2.html">Beranda</a></li>
+            <li><a href="p2-datadiri.html">Bio Data Autor</a></li>
+            <li><a href="p2-halamanlain.html">Riwayat Serial</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <h2>selamat datang di situs resmi autor @kecoak_mabook</h2>
+            <p>selalu nantikan update soal serial terbaru!!</p>
+            
+            <!-- Tambahkan konten dummy agar scroll lebih dari 2000px -->
+            <div style="height: 2200px;"></div>
+        </article>
+        <aside>
+            <h2>serial tahun ini</h2>
+            <p>mertua buronan - episode 69.</p>
+        </aside>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 kecoak_mabook.com</p>
+    </footer>
+
+<!-- Tombol Scroll ke Atas -->
+<button id="scrollTopBtn" title="Kembali ke atas">↑</button>
+
+<script>
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+      scrollTopBtn.classList.add('show');
+    } else {
+      scrollTopBtn.classList.remove('show');
+    }
+  });
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
+
+</body>
+</html>
